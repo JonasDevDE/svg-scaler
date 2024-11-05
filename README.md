@@ -1,3 +1,4 @@
+This is made for the elgato stream deck.
 create svgs/original and svgs/processed folder. Put your svg file into svgs/original.<br/>
 <br/>
 It'l be scaled and put into center<br/>
