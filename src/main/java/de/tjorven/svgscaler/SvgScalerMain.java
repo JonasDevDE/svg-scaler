@@ -23,6 +23,14 @@ public class SvgScalerMain {
     public static void main(String[] args) throws IOException {
         // Verzeichnisse sicherstellen
         File inputDir = new File("svgs/original/");
+        if (!inputDir.exists()) {
+            inputDir.mkdirs();
+
+            System.out.println("Input directory does not exist. Please place SVG files in 'svgs/original/' directory.");
+
+            return;
+        }
+
         File outputDir = new File("svgs/processed/");
         if (!outputDir.exists()) {
             outputDir.mkdirs();
